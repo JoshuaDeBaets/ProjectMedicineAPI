@@ -2,21 +2,14 @@ namespace BL_Medicine.Domain;
 
 public class Medicine
 {
-    private int? _id;
 
-    public int? Id
-    {
-        set
-        {
-            _id = value;
-        }
-    }
+    public int? Id;
+    
+    public string Name;
 
-    public string? Name;
+    public string Description;
 
-    public string? Description;
-
-    public string? Barcode;
+    public string Barcode;
 
     public List<string> UsedFor;
 

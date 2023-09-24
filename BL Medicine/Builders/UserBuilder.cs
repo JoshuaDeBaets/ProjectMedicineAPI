@@ -6,10 +6,9 @@ namespace BL_Medicine.Builders
 {
     public class UserBuilder
     {
-
         private readonly User _user = new();
         
-        public UserBuilder SetFirstname(string firstname)
+        public UserBuilder SetFirstname( string firstname )
         {
             if ( string.IsNullOrEmpty( firstname ) )
             {
@@ -24,7 +23,7 @@ namespace BL_Medicine.Builders
             return this;
         }
 
-        public UserBuilder SetSurname(string surname)
+        public UserBuilder SetSurname( string surname )
         {
             if ( string.IsNullOrEmpty( surname ) )
             {
@@ -39,7 +38,7 @@ namespace BL_Medicine.Builders
             return this;
         }
 
-        public UserBuilder SetEmail(string email)
+        public UserBuilder SetEmail( string email )
         {
             if ( string.IsNullOrEmpty( email ) )
             {
@@ -54,7 +53,7 @@ namespace BL_Medicine.Builders
             return this;
         }
 
-        public UserBuilder SetDateOfBirth(DateTime dateOfBirth)
+        public UserBuilder SetDateOfBirth( DateTime dateOfBirth )
         {
             //empty datetime will converter to the minimum date in c#.
             if ( dateOfBirth == DateTime.MinValue )
@@ -69,14 +68,14 @@ namespace BL_Medicine.Builders
             return this;
         }
 
-        public UserBuilder SetGender(Enum gender)
+        public UserBuilder SetGender( Enum gender )
         {
             // Add any additional gender validation if required.
             _user.Gender = gender;
             return this;
         }
 
-        public UserBuilder SetWeight(int weight)
+        public UserBuilder SetWeight( int weight )
         {
             if ( weight <= 0 )
             {
@@ -87,7 +86,7 @@ namespace BL_Medicine.Builders
             return this;
         }
 
-        public UserBuilder SetHeight(int height)
+        public UserBuilder SetHeight( int height )
         {
             if ( height <= 0 )
             {

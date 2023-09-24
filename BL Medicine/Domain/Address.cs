@@ -8,9 +8,5 @@ public class Address
     public string postalcode;
     public string place;
     public string country;
-
-    public Address()
-    {
-        
-    }
+    
 }

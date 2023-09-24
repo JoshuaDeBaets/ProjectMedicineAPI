@@ -5,8 +5,9 @@ namespace BL_Medicine.Builders;
 
 public class MedicineBuilder
 {
-    private readonly Medicine _medicine = new( );
-
+    private readonly Medicine _medicine = new();
+    
+    
     public MedicineBuilder SetId( int? id )
     {
         if ( id.HasValue )
