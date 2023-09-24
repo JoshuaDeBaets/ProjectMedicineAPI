@@ -1,0 +1,12 @@
+/Users/mittens/Documents/Github/BackEnd Mobile ASP/BL Medicine/obj/Debug/net7.0/BL Medicine.csproj.AssemblyReference.cache
+/Users/mittens/Documents/Github/BackEnd Mobile ASP/BL Medicine/obj/Debug/net7.0/BL Medicine.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mittens/Documents/Github/BackEnd Mobile ASP/BL Medicine/obj/Debug/net7.0/BL Medicine.AssemblyInfoInputs.cache
+/Users/mittens/Documents/Github/BackEnd Mobile ASP/BL Medicine/obj/Debug/net7.0/BL Medicine.AssemblyInfo.cs
+/Users/mittens/Documents/Github/BackEnd Mobile ASP/BL Medicine/obj/Debug/net7.0/BL Medicine.csproj.CoreCompileInputs.cache
+/Users/mittens/Documents/Github/BackEnd Mobile ASP/BL Medicine/bin/Debug/net7.0/BL Medicine.deps.json
+/Users/mittens/Documents/Github/BackEnd Mobile ASP/BL Medicine/bin/Debug/net7.0/BL Medicine.dll
+/Users/mittens/Documents/Github/BackEnd Mobile ASP/BL Medicine/bin/Debug/net7.0/BL Medicine.pdb
+/Users/mittens/Documents/Github/BackEnd Mobile ASP/BL Medicine/obj/Debug/net7.0/BL Medicine.dll
+/Users/mittens/Documents/Github/BackEnd Mobile ASP/BL Medicine/obj/Debug/net7.0/refint/BL Medicine.dll
+/Users/mittens/Documents/Github/BackEnd Mobile ASP/BL Medicine/obj/Debug/net7.0/BL Medicine.pdb
+/Users/mittens/Documents/Github/BackEnd Mobile ASP/BL Medicine/obj/Debug/net7.0/ref/BL Medicine.dll
