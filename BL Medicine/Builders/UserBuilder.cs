@@ -103,6 +103,18 @@ namespace BL_Medicine.Builders
             return this;
         }
 
+        public UserBuilder SetUserMedicines( List<UserMedicine> medicines )
+        {
+            _user.UserMedicines = medicines;
+            return this;
+        }
+
+        public UserBuilder AddUserMedicines ( UserMedicine medicine )
+        {
+            _user.UserMedicines.Add( medicine );
+            return this;
+        }
+
         public User Build()
         {
             if ( _user.Firstname == null ) throw new UserException( "A first name is required and must be provided" );

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mittens/Documents/Github/BackEnd Mobile ASP/API/API.csproj",
+      "projectUniqueName": "/Users/mittens/Documents/Github/ProjectMedicineAPI/API/API.csproj",
       "projectName": "API",
-      "projectPath": "/Users/mittens/Documents/Github/BackEnd Mobile ASP/API/API.csproj",
+      "projectPath": "/Users/mittens/Documents/Github/ProjectMedicineAPI/API/API.csproj",
       "packagesPath": "/Users/mittens/.nuget/packages/",
-      "outputPath": "/Users/mittens/Documents/Github/BackEnd Mobile ASP/API/obj/",
+      "outputPath": "/Users/mittens/Documents/Github/ProjectMedicineAPI/API/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/mittens/.nuget/NuGet/NuGet.Config"

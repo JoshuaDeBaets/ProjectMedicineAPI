@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hCxqhevJKIstij/dMzKsZlgTNQa6lOiZVE/S1CJQ6lWmPos91eFs5ZaNZZh6Q/hLKr2oxKvzVdoA44poUArzhQ==",
+  "dgSpecHash": "bRWk4s4t3cMQFtyvdxf3h9m3swBq3OaB+VY4g5eGA8Vb3opgDZ4rIb+0WjhCMYcYbf3aH3Y0HI+ws8XsUlid6Q==",
   "success": true,
-  "projectFilePath": "/Users/mittens/Documents/Github/BackEnd Mobile ASP/ConsoleTesting/ConsoleTesting.csproj",
+  "projectFilePath": "/Users/mittens/Documents/Github/ProjectMedicineAPI/ConsoleTesting/ConsoleTesting.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mittens/Documents/Github/BackEnd Mobile ASP/BL Medicine/BL Medicine.csproj",
+      "projectUniqueName": "/Users/mittens/Documents/Github/ProjectMedicineAPI/BL Medicine/BL Medicine.csproj",
       "projectName": "BL Medicine",
-      "projectPath": "/Users/mittens/Documents/Github/BackEnd Mobile ASP/BL Medicine/BL Medicine.csproj",
+      "projectPath": "/Users/mittens/Documents/Github/ProjectMedicineAPI/BL Medicine/BL Medicine.csproj",
       "packagesPath": "/Users/mittens/.nuget/packages/",
-      "outputPath": "/Users/mittens/Documents/Github/BackEnd Mobile ASP/BL Medicine/obj/",
+      "outputPath": "/Users/mittens/Documents/Github/ProjectMedicineAPI/BL Medicine/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/mittens/.nuget/NuGet/NuGet.Config"

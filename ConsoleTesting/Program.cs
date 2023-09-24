@@ -8,10 +8,12 @@ public class Program
     static void Main()
     {
 
-        UserBuilder builder = new ();
-        builder.SetFirstname( "Josh" );
-        builder.SetSurname( "De Baets" );
-        builder.SetEmail("josh@gmail.com");
+        var builder = new UserBuilder()
+            .SetFirstname( "Josh" )
+            .SetSurname( "De Baets" )
+            .SetEmail( "josh@gmail.com" )
+            .SetDateOfBirth( new DateTime( 1994, 8, 7 ) );
+        
 
         User user = builder.Build();
         Console.WriteLine(user.Firstname + " " + user.Surname);

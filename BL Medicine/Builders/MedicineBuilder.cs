@@ -43,10 +43,22 @@ public class MedicineBuilder
         return this;
     }
 
+    public MedicineBuilder SetUsedFor( List<string> usedFor )
+    {
+        _medicine.UsedFor = usedFor;
+        return this;
+    }
+
     public MedicineBuilder AddUsedFor(string usedFor)
     {
         
         _medicine.UsedFor.Add(usedFor);
+        return this;
+    }
+
+    public MedicineBuilder SetSideEffects( List<string> sideEffects )
+    {
+        _medicine.SideEffects = sideEffects;
         return this;
     }
 

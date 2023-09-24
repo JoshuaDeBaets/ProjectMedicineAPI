@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aYRRYA5MLGJZtMsayxJaSG5ow6Q9iGXxSguEUlLzAl2f8Xk7mLLuTb8O8uqepbB7Y8S+gpxHQalnoVv7eHOwCw==",
+  "dgSpecHash": "1LIZO/0H8U34rBATglFmGGUXx3MsJfL5qD7YwGcRZbaMh5O8FnpOf9vufyCjINy3pES0wDgu/Z3mI2IEvcbCPA==",
   "success": true,
-  "projectFilePath": "/Users/mittens/Documents/Github/BackEnd Mobile ASP/BL Medicine/BL Medicine.csproj",
+  "projectFilePath": "/Users/mittens/Documents/Github/ProjectMedicineAPI/BL Medicine/BL Medicine.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

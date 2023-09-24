@@ -10,10 +10,12 @@ public class User : Person
     public int? Height;
 
     public bool IsEmailValidated;
+    
+    public List<UserMedicine> UserMedicines;
 
     public User()
     {
-        
+        UserMedicines = new();
     }
 
 }

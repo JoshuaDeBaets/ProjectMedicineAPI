@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/mittens/Documents/Github/BackEnd Mobile ASP/Project/Project.csproj": {}
+    "/Users/mittens/Documents/Github/ProjectMedicineAPI/Project/Project.csproj": {}
   },
   "projects": {
-    "/Users/mittens/Documents/Github/BackEnd Mobile ASP/BL Medicine/BL Medicine.csproj": {
+    "/Users/mittens/Documents/Github/ProjectMedicineAPI/BL Medicine/BL Medicine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mittens/Documents/Github/BackEnd Mobile ASP/BL Medicine/BL Medicine.csproj",
+        "projectUniqueName": "/Users/mittens/Documents/Github/ProjectMedicineAPI/BL Medicine/BL Medicine.csproj",
         "projectName": "BL Medicine",
-        "projectPath": "/Users/mittens/Documents/Github/BackEnd Mobile ASP/BL Medicine/BL Medicine.csproj",
+        "projectPath": "/Users/mittens/Documents/Github/ProjectMedicineAPI/BL Medicine/BL Medicine.csproj",
         "packagesPath": "/Users/mittens/.nuget/packages/",
-        "outputPath": "/Users/mittens/Documents/Github/BackEnd Mobile ASP/BL Medicine/obj/",
+        "outputPath": "/Users/mittens/Documents/Github/ProjectMedicineAPI/BL Medicine/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/mittens/.nuget/NuGet/NuGet.Config"
@@ -58,14 +58,14 @@
         }
       }
     },
-    "/Users/mittens/Documents/Github/BackEnd Mobile ASP/Project/Project.csproj": {
+    "/Users/mittens/Documents/Github/ProjectMedicineAPI/Project/Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mittens/Documents/Github/BackEnd Mobile ASP/Project/Project.csproj",
+        "projectUniqueName": "/Users/mittens/Documents/Github/ProjectMedicineAPI/Project/Project.csproj",
         "projectName": "Project",
-        "projectPath": "/Users/mittens/Documents/Github/BackEnd Mobile ASP/Project/Project.csproj",
+        "projectPath": "/Users/mittens/Documents/Github/ProjectMedicineAPI/Project/Project.csproj",
         "packagesPath": "/Users/mittens/.nuget/packages/",
-        "outputPath": "/Users/mittens/Documents/Github/BackEnd Mobile ASP/Project/obj/",
+        "outputPath": "/Users/mittens/Documents/Github/ProjectMedicineAPI/Project/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/mittens/.nuget/NuGet/NuGet.Config"
@@ -81,8 +81,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/mittens/Documents/Github/BackEnd Mobile ASP/BL Medicine/BL Medicine.csproj": {
-                "projectPath": "/Users/mittens/Documents/Github/BackEnd Mobile ASP/BL Medicine/BL Medicine.csproj"
+              "/Users/mittens/Documents/Github/ProjectMedicineAPI/BL Medicine/BL Medicine.csproj": {
+                "projectPath": "/Users/mittens/Documents/Github/ProjectMedicineAPI/BL Medicine/BL Medicine.csproj"
               }
             }
           }

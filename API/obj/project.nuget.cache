@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2lQVeDtQi5WC+uBZgP0rE1M0AZyvvd1nPkmjJn7cGtt24/31TPAq27RiOI/TK8HHjGemOnrRfMcku8hVcO37/A==",
+  "dgSpecHash": "B1wqeWWLjN/gUl6Uh+ZML9gh7PB1gPSeog74TrQkIAMJvM6ib1BPcHsiLo9oGHnTNCqzxJVp3wdxDx0QHsaZLg==",
   "success": true,
-  "projectFilePath": "/Users/mittens/Documents/Github/BackEnd Mobile ASP/API/API.csproj",
+  "projectFilePath": "/Users/mittens/Documents/Github/ProjectMedicineAPI/API/API.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

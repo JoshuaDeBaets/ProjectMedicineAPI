@@ -11,12 +11,12 @@ public class Medicine
             _id = value;
         }
     }
-    
-    public string Name;
 
-    public string Description;
+    public string? Name;
 
-    public string Barcode;
+    public string? Description;
+
+    public string? Barcode;
 
     public List<string> UsedFor;
 
