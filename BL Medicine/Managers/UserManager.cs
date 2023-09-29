@@ -29,6 +29,7 @@ public class UserManager
                 };
                 return response;
             }
+            
             //TODO: Login
             return null;
         }
@@ -65,7 +66,7 @@ public class UserManager
 
     public User GetProfile()
     {
-        
+        var user = new User();
         throw new NotImplementedException();
     }
 

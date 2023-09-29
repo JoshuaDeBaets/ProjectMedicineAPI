@@ -1,5 +1,9 @@
+using System.Net.Cache;
 using BL_Medicine.Builders;
 using BL_Medicine.Domain;
+using BL_Medicine.Managers;
+using BL_Medicine.Repositories;
+using DL_Medicine;
 
 namespace ConsoleTesting;
 
@@ -20,5 +24,12 @@ public abstract class Program
         User user = builder.Build();
         Console.WriteLine( $"{user.Firstname} {user.Surname}" );
         Console.WriteLine( user.Height.ToString() );
+
+        UserRepository repository = new UserRepository();
+        UserManager userManager = new UserManager( repository );
+        
+        
+        
+        
     }
 }

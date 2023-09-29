@@ -11,19 +11,6 @@
         "runtime": {
           "bin/placeholder/BL Medicine.dll": {}
         }
-      },
-      "DL_Medicine/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "BL Medicine": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/DL_Medicine.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/DL_Medicine.dll": {}
-        }
       }
     }
   },
@@ -32,17 +19,11 @@
       "type": "project",
       "path": "../BL Medicine/BL Medicine.csproj",
       "msbuildProject": "../BL Medicine/BL Medicine.csproj"
-    },
-    "DL_Medicine/1.0.0": {
-      "type": "project",
-      "path": "../DL_Medicine/DL_Medicine.csproj",
-      "msbuildProject": "../DL_Medicine/DL_Medicine.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "BL Medicine >= 1.0.0",
-      "DL_Medicine >= 1.0.0"
+      "BL Medicine >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -51,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mittens/Documents/Github/ProjectMedicineAPI/ConsoleTesting/ConsoleTesting.csproj",
-      "projectName": "ConsoleTesting",
-      "projectPath": "/Users/mittens/Documents/Github/ProjectMedicineAPI/ConsoleTesting/ConsoleTesting.csproj",
+      "projectUniqueName": "/Users/mittens/Documents/Github/ProjectMedicineAPI/DL_Medicine/DL_Medicine.csproj",
+      "projectName": "DL_Medicine",
+      "projectPath": "/Users/mittens/Documents/Github/ProjectMedicineAPI/DL_Medicine/DL_Medicine.csproj",
       "packagesPath": "/Users/mittens/.nuget/packages/",
-      "outputPath": "/Users/mittens/Documents/Github/ProjectMedicineAPI/ConsoleTesting/obj/",
+      "outputPath": "/Users/mittens/Documents/Github/ProjectMedicineAPI/DL_Medicine/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/mittens/.nuget/NuGet/NuGet.Config"
@@ -73,9 +54,6 @@
           "projectReferences": {
             "/Users/mittens/Documents/Github/ProjectMedicineAPI/BL Medicine/BL Medicine.csproj": {
               "projectPath": "/Users/mittens/Documents/Github/ProjectMedicineAPI/BL Medicine/BL Medicine.csproj"
-            },
-            "/Users/mittens/Documents/Github/ProjectMedicineAPI/DL_Medicine/DL_Medicine.csproj": {
-              "projectPath": "/Users/mittens/Documents/Github/ProjectMedicineAPI/DL_Medicine/DL_Medicine.csproj"
             }
           }
         }
