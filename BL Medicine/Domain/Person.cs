@@ -8,5 +8,7 @@ public class Person
 
     public string? Email;
 
+    public string? Password;
+
     public DateTime? DayOfBirth;
 }

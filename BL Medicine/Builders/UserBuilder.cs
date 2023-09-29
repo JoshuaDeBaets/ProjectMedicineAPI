@@ -53,6 +53,17 @@ namespace BL_Medicine.Builders
             return this;
         }
 
+        public UserBuilder Password( string password )
+        {
+            if ( string.IsNullOrEmpty( password ) )
+            {
+                throw new UserException( "No Password" );
+            }
+
+            _user.Password = password;
+            return this;
+        }
+
         public UserBuilder SetDateOfBirth( DateTime dateOfBirth )
         {
             //empty datetime will converter to the minimum date in c#.

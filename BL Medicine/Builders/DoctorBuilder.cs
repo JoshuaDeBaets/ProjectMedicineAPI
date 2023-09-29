@@ -23,6 +23,11 @@ public class DoctorBuilder
         _doctor.Surname = surname;
         return this;
     }
+
+    public Doctor Build()
+    {
+        return _doctor;
+    }
     
     
 }

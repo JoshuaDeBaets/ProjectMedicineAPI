@@ -5,11 +5,11 @@ public class Medicine
 
     public int? Id;
     
-    public string Name;
+    public string? Name;
 
-    public string Description;
+    public string? Description;
 
-    public string Barcode;
+    public string? Barcode;
 
     public List<string> UsedFor;
 
@@ -19,7 +19,6 @@ public class Medicine
     {
         UsedFor = new();
         SideEffects = new();
-        
     }
 
 
