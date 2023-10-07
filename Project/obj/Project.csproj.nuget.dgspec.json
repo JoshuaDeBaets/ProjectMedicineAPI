@@ -1,26 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/Users/mittens/Documents/Github/ProjectMedicineAPI/Project/Project.csproj": {}
+    "C:\\Users\\purej\\Documents\\GitHub\\ProjectMedicineAPI\\Project\\Project.csproj": {}
   },
   "projects": {
-    "/Users/mittens/Documents/Github/ProjectMedicineAPI/BL Medicine/BL Medicine.csproj": {
+    "C:\\Users\\purej\\Documents\\GitHub\\ProjectMedicineAPI\\BL Medicine\\BL Medicine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mittens/Documents/Github/ProjectMedicineAPI/BL Medicine/BL Medicine.csproj",
+        "projectUniqueName": "C:\\Users\\purej\\Documents\\GitHub\\ProjectMedicineAPI\\BL Medicine\\BL Medicine.csproj",
         "projectName": "BL Medicine",
-        "projectPath": "/Users/mittens/Documents/Github/ProjectMedicineAPI/BL Medicine/BL Medicine.csproj",
-        "packagesPath": "/Users/mittens/.nuget/packages/",
-        "outputPath": "/Users/mittens/Documents/Github/ProjectMedicineAPI/BL Medicine/obj/",
+        "projectPath": "C:\\Users\\purej\\Documents\\GitHub\\ProjectMedicineAPI\\BL Medicine\\BL Medicine.csproj",
+        "packagesPath": "C:\\Users\\purej\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\purej\\Documents\\GitHub\\ProjectMedicineAPI\\BL Medicine\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/mittens/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\purej\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -54,35 +60,41 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.306/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/mittens/Documents/Github/ProjectMedicineAPI/Project/Project.csproj": {
+    "C:\\Users\\purej\\Documents\\GitHub\\ProjectMedicineAPI\\Project\\Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mittens/Documents/Github/ProjectMedicineAPI/Project/Project.csproj",
+        "projectUniqueName": "C:\\Users\\purej\\Documents\\GitHub\\ProjectMedicineAPI\\Project\\Project.csproj",
         "projectName": "Project",
-        "projectPath": "/Users/mittens/Documents/Github/ProjectMedicineAPI/Project/Project.csproj",
-        "packagesPath": "/Users/mittens/.nuget/packages/",
-        "outputPath": "/Users/mittens/Documents/Github/ProjectMedicineAPI/Project/obj/",
+        "projectPath": "C:\\Users\\purej\\Documents\\GitHub\\ProjectMedicineAPI\\Project\\Project.csproj",
+        "packagesPath": "C:\\Users\\purej\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\purej\\Documents\\GitHub\\ProjectMedicineAPI\\Project\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/mittens/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\purej\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/mittens/Documents/Github/ProjectMedicineAPI/BL Medicine/BL Medicine.csproj": {
-                "projectPath": "/Users/mittens/Documents/Github/ProjectMedicineAPI/BL Medicine/BL Medicine.csproj"
+              "C:\\Users\\purej\\Documents\\GitHub\\ProjectMedicineAPI\\BL Medicine\\BL Medicine.csproj": {
+                "projectPath": "C:\\Users\\purej\\Documents\\GitHub\\ProjectMedicineAPI\\BL Medicine\\BL Medicine.csproj"
               }
             }
           }
@@ -112,7 +124,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.306/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
