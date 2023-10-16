@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "knGFkS54qKNVG8HaWbOAp5S8j41ertQdi6eZk6A2e6Xhz+TAWw3aGGer5KgvJpEddOTa0SqlE4wNH8LFxeiICw==",
+  "dgSpecHash": "+u/b9dL5bt258ZeogeNj4zpXIVTzFH+PnDqOkM67yKKAZXvDOXhHx+KTR2HLueQFYGWQOaOGpn8U4rLT/m1l9w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\purej\\Documents\\GitHub\\ProjectMedicineAPI\\ConsoleTesting\\ConsoleTesting.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/mittens/Documents/Github/ProjectMedicineAPI/ConsoleTesting/ConsoleTesting.csproj",
+  "expectedPackageFiles": [
+    "/Users/mittens/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "/Users/mittens/.nuget/packages/microsoft.openapi/1.6.9/microsoft.openapi.1.6.9.nupkg.sha512",
+    "/Users/mittens/.nuget/packages/swashbuckle.aspnetcore/6.5.0/swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "/Users/mittens/.nuget/packages/swashbuckle.aspnetcore.swagger/6.5.0/swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "/Users/mittens/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.5.0/swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "/Users/mittens/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
   "logs": []
 }

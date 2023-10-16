@@ -2,8 +2,10 @@ using System.Net.Cache;
 using BL_Medicine.Builders;
 using BL_Medicine.Domain;
 using BL_Medicine.Managers;
+using BL_Medicine.RegexChecks;
 using BL_Medicine.Repositories;
 using DL_Medicine;
+using System.Security.Cryptography;
 
 namespace ConsoleTesting;
 
@@ -12,24 +14,17 @@ public abstract class Program
     static void Main()
     {
 
-        var builder = new UserBuilder()
-            .SetFirstname( "Josh" )
-            .SetSurname( "De Baets" )
-            .SetEmail( "josh@gmail.com" )
-            .SetDateOfBirth( new DateTime( 1994, 8, 7 ) )
-            .SetWeight( 85 )
-            .SetHeight( 187 );
-            
 
-        User user = builder.Build();
-        Console.WriteLine( $"{user.Firstname} {user.Surname}" );
-        Console.WriteLine( user.Height.ToString() );
+        string hi = "Nosferatu21";
+        byte[] Key = KeyAndIvGenerator.GenerateRandomKey(128);
 
-        UserRepository repository = new UserRepository();
-        UserManager userManager = new UserManager( repository );
-        
-        
-        
-        
+        // Generate a 128-bit (16-byte) IV for AES encryption.
+        byte[] IV = KeyAndIvGenerator.GenerateRandomIv(128);
+        Encryptor crypto = new( Key, IV );
+        string cript = crypto.Encrypt( hi );
+
+        Console.Write(cript);
+
+
     }
 }

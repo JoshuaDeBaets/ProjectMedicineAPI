@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "fuCH7VC9613xSmMdP1dTSCkbn2dm9i+TCaEXPvm6pq8zk9iY2SuJSSVwLLjJ/N+rNPInyBPYe9y1ASRj/bLMcg==",
+  "dgSpecHash": "hebTkxKrYIcHNggY/p/EatTM7DY7JrXlJrpYUa/NyTH0PMQAVGIHn04K0gdvRd9lMdiJvFjdv7dBpIU0n7QqvA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\purej\\Documents\\GitHub\\ProjectMedicineAPI\\BL Medicine\\BL Medicine.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/mittens/Documents/Github/ProjectMedicineAPI/BL Medicine/BL Medicine.csproj",
+  "expectedPackageFiles": [
+    "/Users/mittens/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "/Users/mittens/.nuget/packages/microsoft.openapi/1.6.9/microsoft.openapi.1.6.9.nupkg.sha512",
+    "/Users/mittens/.nuget/packages/swashbuckle.aspnetcore/6.5.0/swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "/Users/mittens/.nuget/packages/swashbuckle.aspnetcore.swagger/6.5.0/swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "/Users/mittens/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.5.0/swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "/Users/mittens/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
   "logs": []
 }

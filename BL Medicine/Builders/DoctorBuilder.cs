@@ -9,13 +9,13 @@ public class DoctorBuilder
     private readonly Doctor _doctor;
 
     // Name of the Group Practice/Surgery you attend
-    public DoctorBuilder SetPracticeName( string practicename )
+    public DoctorBuilder SetPracticeName( string practiceName )
     {
-        if (practicename.isNull() )
+        if (practiceName.isNull() )
         {
             throw new UserException("Surgery cannot be null");
         }
-        _doctor.PracticeName = practicename;
+        _doctor.PracticeName = practiceName;
         return this;
     }
 

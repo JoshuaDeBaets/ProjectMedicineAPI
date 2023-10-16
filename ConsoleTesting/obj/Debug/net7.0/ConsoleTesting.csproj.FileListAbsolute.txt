@@ -34,3 +34,9 @@
 /Users/mittens/Documents/Github/ProjectMedicineAPI/ConsoleTesting/obj/Debug/net7.0/ConsoleTesting.pdb
 /Users/mittens/Documents/Github/ProjectMedicineAPI/ConsoleTesting/obj/Debug/net7.0/ConsoleTesting.genruntimeconfig.cache
 /Users/mittens/Documents/Github/ProjectMedicineAPI/ConsoleTesting/obj/Debug/net7.0/ref/ConsoleTesting.dll
+/Users/mittens/Documents/Github/ProjectMedicineAPI/ConsoleTesting/bin/Debug/net7.0/Microsoft.OpenApi.dll
+/Users/mittens/Documents/Github/ProjectMedicineAPI/ConsoleTesting/bin/Debug/net7.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/mittens/Documents/Github/ProjectMedicineAPI/ConsoleTesting/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/mittens/Documents/Github/ProjectMedicineAPI/ConsoleTesting/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/mittens/Documents/Github/ProjectMedicineAPI/ConsoleTesting/bin/Debug/net7.0/DL_Medicine.dll
+/Users/mittens/Documents/Github/ProjectMedicineAPI/ConsoleTesting/bin/Debug/net7.0/DL_Medicine.pdb

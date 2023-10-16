@@ -1,0 +1,15 @@
+/Users/mittens/Documents/Github/ProjectMedicineAPI/DL_Medicine/bin/Debug/net7.0/DL_Medicine.deps.json
+/Users/mittens/Documents/Github/ProjectMedicineAPI/DL_Medicine/bin/Debug/net7.0/DL_Medicine.dll
+/Users/mittens/Documents/Github/ProjectMedicineAPI/DL_Medicine/bin/Debug/net7.0/DL_Medicine.pdb
+/Users/mittens/Documents/Github/ProjectMedicineAPI/DL_Medicine/bin/Debug/net7.0/BL Medicine.dll
+/Users/mittens/Documents/Github/ProjectMedicineAPI/DL_Medicine/bin/Debug/net7.0/BL Medicine.pdb
+/Users/mittens/Documents/Github/ProjectMedicineAPI/DL_Medicine/obj/Debug/net7.0/DL_Medicine.csproj.AssemblyReference.cache
+/Users/mittens/Documents/Github/ProjectMedicineAPI/DL_Medicine/obj/Debug/net7.0/DL_Medicine.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mittens/Documents/Github/ProjectMedicineAPI/DL_Medicine/obj/Debug/net7.0/DL_Medicine.AssemblyInfoInputs.cache
+/Users/mittens/Documents/Github/ProjectMedicineAPI/DL_Medicine/obj/Debug/net7.0/DL_Medicine.AssemblyInfo.cs
+/Users/mittens/Documents/Github/ProjectMedicineAPI/DL_Medicine/obj/Debug/net7.0/DL_Medicine.csproj.CoreCompileInputs.cache
+/Users/mittens/Documents/Github/ProjectMedicineAPI/DL_Medicine/obj/Debug/net7.0/DL_Medicine.csproj.CopyComplete
+/Users/mittens/Documents/Github/ProjectMedicineAPI/DL_Medicine/obj/Debug/net7.0/DL_Medicine.dll
+/Users/mittens/Documents/Github/ProjectMedicineAPI/DL_Medicine/obj/Debug/net7.0/refint/DL_Medicine.dll
+/Users/mittens/Documents/Github/ProjectMedicineAPI/DL_Medicine/obj/Debug/net7.0/DL_Medicine.pdb
+/Users/mittens/Documents/Github/ProjectMedicineAPI/DL_Medicine/obj/Debug/net7.0/ref/DL_Medicine.dll

@@ -1,0 +1,34 @@
+/Users/mittens/Documents/Github/ProjectMedicineAPI/API/bin/Debug/net7.0/appsettings.Development.json
+/Users/mittens/Documents/Github/ProjectMedicineAPI/API/bin/Debug/net7.0/appsettings.json
+/Users/mittens/Documents/Github/ProjectMedicineAPI/API/bin/Debug/net7.0/API
+/Users/mittens/Documents/Github/ProjectMedicineAPI/API/bin/Debug/net7.0/API.deps.json
+/Users/mittens/Documents/Github/ProjectMedicineAPI/API/bin/Debug/net7.0/API.runtimeconfig.json
+/Users/mittens/Documents/Github/ProjectMedicineAPI/API/bin/Debug/net7.0/API.dll
+/Users/mittens/Documents/Github/ProjectMedicineAPI/API/bin/Debug/net7.0/API.pdb
+/Users/mittens/Documents/Github/ProjectMedicineAPI/API/obj/Debug/net7.0/API.csproj.AssemblyReference.cache
+/Users/mittens/Documents/Github/ProjectMedicineAPI/API/obj/Debug/net7.0/API.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mittens/Documents/Github/ProjectMedicineAPI/API/obj/Debug/net7.0/API.AssemblyInfoInputs.cache
+/Users/mittens/Documents/Github/ProjectMedicineAPI/API/obj/Debug/net7.0/API.AssemblyInfo.cs
+/Users/mittens/Documents/Github/ProjectMedicineAPI/API/obj/Debug/net7.0/API.csproj.CoreCompileInputs.cache
+/Users/mittens/Documents/Github/ProjectMedicineAPI/API/obj/Debug/net7.0/API.MvcApplicationPartsAssemblyInfo.cache
+/Users/mittens/Documents/Github/ProjectMedicineAPI/API/obj/Debug/net7.0/staticwebassets/msbuild.API.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/mittens/Documents/Github/ProjectMedicineAPI/API/obj/Debug/net7.0/staticwebassets/msbuild.build.API.props
+/Users/mittens/Documents/Github/ProjectMedicineAPI/API/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.API.props
+/Users/mittens/Documents/Github/ProjectMedicineAPI/API/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.API.props
+/Users/mittens/Documents/Github/ProjectMedicineAPI/API/obj/Debug/net7.0/staticwebassets.pack.json
+/Users/mittens/Documents/Github/ProjectMedicineAPI/API/obj/Debug/net7.0/staticwebassets.build.json
+/Users/mittens/Documents/Github/ProjectMedicineAPI/API/obj/Debug/net7.0/staticwebassets.development.json
+/Users/mittens/Documents/Github/ProjectMedicineAPI/API/obj/Debug/net7.0/scopedcss/bundle/API.styles.css
+/Users/mittens/Documents/Github/ProjectMedicineAPI/API/obj/Debug/net7.0/API.dll
+/Users/mittens/Documents/Github/ProjectMedicineAPI/API/obj/Debug/net7.0/refint/API.dll
+/Users/mittens/Documents/Github/ProjectMedicineAPI/API/obj/Debug/net7.0/API.pdb
+/Users/mittens/Documents/Github/ProjectMedicineAPI/API/obj/Debug/net7.0/API.genruntimeconfig.cache
+/Users/mittens/Documents/Github/ProjectMedicineAPI/API/obj/Debug/net7.0/ref/API.dll
+/Users/mittens/Documents/Github/ProjectMedicineAPI/API/bin/Debug/net7.0/Microsoft.OpenApi.dll
+/Users/mittens/Documents/Github/ProjectMedicineAPI/API/bin/Debug/net7.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/mittens/Documents/Github/ProjectMedicineAPI/API/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/mittens/Documents/Github/ProjectMedicineAPI/API/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/mittens/Documents/Github/ProjectMedicineAPI/API/obj/Debug/net7.0/API.MvcApplicationPartsAssemblyInfo.cs
+/Users/mittens/Documents/Github/ProjectMedicineAPI/API/obj/Debug/net7.0/API.csproj.CopyComplete
+/Users/mittens/Documents/Github/ProjectMedicineAPI/API/bin/Debug/net7.0/BL Medicine.dll
+/Users/mittens/Documents/Github/ProjectMedicineAPI/API/bin/Debug/net7.0/BL Medicine.pdb
