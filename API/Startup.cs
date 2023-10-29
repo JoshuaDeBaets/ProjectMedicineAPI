@@ -1,13 +1,14 @@
-using API.Controllers;
+using System.Collections.Generic;
 using BL_Medicine.Managers;
+using BL_Medicine.Repositories;
+using DL_Medicine;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using Swashbuckle.AspNetCore.Swagger;
 
 namespace API
 {
@@ -20,11 +21,8 @@ namespace API
             Configuration = configuration;
         }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
-
             services.AddCors(options =>
             {
                 options.AddPolicy("CorsPolicy",
@@ -32,44 +30,46 @@ namespace API
                         .AllowAnyMethod()
                         .AllowAnyHeader());
             });
-            
+
             // Add Swagger/OpenAPI support for documenting your API (optional)
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Your API", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Medicine API", Version = "v1", Description = "The MediApp API" });
             });
 
-            //services.AddSingleton<UserManager>();
+            string connectionString = "Test";
+            services.AddControllers();
+            services.AddSingleton<IUserRepository>(r => new UserRepository(connectionString));
+            services.AddSingleton<UserManager>();
+
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            var basePath = "/"; // Use a forward slash to specify the root path
+
+            // Enable Swagger UI in development (optional)
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+            }
 
-                // Enable Swagger UI in development (optional)
-                app.UseSwagger();
-                app.UseSwaggerUI(c =>
+            app.UseSwagger(c =>
+            {
+                c.PreSerializeFilters.Add((swaggerDoc, httpReq) =>
                 {
-                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Your API V1");
+                    swaggerDoc.Servers = new List<OpenApiServer> { new OpenApiServer { Url = $"{httpReq.Scheme}://{httpReq.Host.Value}/swagger/" } };
                 });
-            }
-            else
-            {
-                app.UseExceptionHandler("/Home/Error");
-                app.UseHsts();
-            }
-
-            app.Use((context, next) =>
-            {
-                context.Request.Scheme = "https";
-                context.Request.Host = new HostString(context.Request.Host.Host, 443); // Specify your HTTPS port here
-                return next();
             });
-            
-            
+
+            app.UseSwaggerUI(options =>
+            {
+                options.SwaggerEndpoint($"{basePath}swagger/v1/swagger.json", "Medicine API");
+                options.RoutePrefix = "swagger";
+            });
+
+            app.UseCors("CorsPolicy"); // Add CORS middleware before routing
+
             app.UseRouting();
             app.UseAuthorization();
 

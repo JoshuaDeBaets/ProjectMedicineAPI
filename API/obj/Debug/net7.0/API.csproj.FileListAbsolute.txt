@@ -32,3 +32,5 @@
 /Users/mittens/Documents/Github/ProjectMedicineAPI/API/obj/Debug/net7.0/API.csproj.CopyComplete
 /Users/mittens/Documents/Github/ProjectMedicineAPI/API/bin/Debug/net7.0/BL Medicine.dll
 /Users/mittens/Documents/Github/ProjectMedicineAPI/API/bin/Debug/net7.0/BL Medicine.pdb
+/Users/mittens/Documents/Github/ProjectMedicineAPI/API/bin/Debug/net7.0/DL_Medicine.dll
+/Users/mittens/Documents/Github/ProjectMedicineAPI/API/bin/Debug/net7.0/DL_Medicine.pdb

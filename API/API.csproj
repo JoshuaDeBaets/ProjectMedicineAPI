@@ -13,6 +13,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\BL Medicine\BL Medicine.csproj" />
+      <ProjectReference Include="..\DL_Medicine\DL_Medicine.csproj" />
     </ItemGroup>
 
 </Project>

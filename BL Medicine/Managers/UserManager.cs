@@ -1,5 +1,6 @@
 using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.JavaScript;
+using BL_Medicine.Builders;
 using BL_Medicine.Domain;
 using BL_Medicine.Exceptions;
 using BL_Medicine.RegexChecks;
@@ -66,8 +67,16 @@ public class UserManager
 
     public User GetProfile()
     {
-        var user = new User();
-        throw new NotImplementedException();
+        var b = new UserBuilder()
+            .SetFirstname( "Hodor" )
+            .SetSurname( "Jansenss" )
+            .SetEmail( "jansenss@gmail.com" )
+            .Password( "Idk" );
+            
+
+        var user = b.Build();
+        return user;
+        //throw new NotImplementedException();
     }
 
     public ErrorModel UpdateProfile()

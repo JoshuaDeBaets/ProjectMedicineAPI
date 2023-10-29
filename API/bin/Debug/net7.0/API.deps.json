@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "API/1.0.0": {
         "dependencies": {
+          "DL_Medicine": "1.0.0",
           "Microsoft.OpenApi": "1.6.9",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
@@ -70,6 +71,16 @@
         "runtime": {
           "BL Medicine.dll": {}
         }
+      },
+      "DL_Medicine/1.0.0": {
+        "dependencies": {
+          "BL Medicine": "1.0.0",
+          "Microsoft.OpenApi": "1.6.9",
+          "Swashbuckle.AspNetCore": "6.5.0"
+        },
+        "runtime": {
+          "DL_Medicine.dll": {}
+        }
       }
     }
   },
@@ -122,6 +133,11 @@
       "hashPath": "swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
     },
     "BL Medicine/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DL_Medicine/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
