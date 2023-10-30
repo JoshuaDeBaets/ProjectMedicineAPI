@@ -16,27 +16,27 @@
 /Users/mittens/Documents/Github/BackEnd Mobile ASP/ConsoleTesting/bin/Debug/net7.0/BL Medicine.dll
 /Users/mittens/Documents/Github/BackEnd Mobile ASP/ConsoleTesting/bin/Debug/net7.0/BL Medicine.pdb
 /Users/mittens/Documents/Github/BackEnd Mobile ASP/ConsoleTesting/obj/Debug/net7.0/ConsoleTesting.csproj.CopyComplete
-/Users/mittens/Documents/Github/ProjectMedicineAPI/ConsoleTesting/bin/Debug/net7.0/ConsoleTesting
-/Users/mittens/Documents/Github/ProjectMedicineAPI/ConsoleTesting/bin/Debug/net7.0/ConsoleTesting.deps.json
-/Users/mittens/Documents/Github/ProjectMedicineAPI/ConsoleTesting/bin/Debug/net7.0/ConsoleTesting.runtimeconfig.json
-/Users/mittens/Documents/Github/ProjectMedicineAPI/ConsoleTesting/bin/Debug/net7.0/ConsoleTesting.dll
-/Users/mittens/Documents/Github/ProjectMedicineAPI/ConsoleTesting/bin/Debug/net7.0/ConsoleTesting.pdb
-/Users/mittens/Documents/Github/ProjectMedicineAPI/ConsoleTesting/bin/Debug/net7.0/BL Medicine.dll
-/Users/mittens/Documents/Github/ProjectMedicineAPI/ConsoleTesting/bin/Debug/net7.0/BL Medicine.pdb
-/Users/mittens/Documents/Github/ProjectMedicineAPI/ConsoleTesting/obj/Debug/net7.0/ConsoleTesting.csproj.AssemblyReference.cache
-/Users/mittens/Documents/Github/ProjectMedicineAPI/ConsoleTesting/obj/Debug/net7.0/ConsoleTesting.GeneratedMSBuildEditorConfig.editorconfig
-/Users/mittens/Documents/Github/ProjectMedicineAPI/ConsoleTesting/obj/Debug/net7.0/ConsoleTesting.AssemblyInfoInputs.cache
-/Users/mittens/Documents/Github/ProjectMedicineAPI/ConsoleTesting/obj/Debug/net7.0/ConsoleTesting.AssemblyInfo.cs
-/Users/mittens/Documents/Github/ProjectMedicineAPI/ConsoleTesting/obj/Debug/net7.0/ConsoleTesting.csproj.CoreCompileInputs.cache
-/Users/mittens/Documents/Github/ProjectMedicineAPI/ConsoleTesting/obj/Debug/net7.0/ConsoleTesting.csproj.CopyComplete
-/Users/mittens/Documents/Github/ProjectMedicineAPI/ConsoleTesting/obj/Debug/net7.0/ConsoleTesting.dll
-/Users/mittens/Documents/Github/ProjectMedicineAPI/ConsoleTesting/obj/Debug/net7.0/refint/ConsoleTesting.dll
-/Users/mittens/Documents/Github/ProjectMedicineAPI/ConsoleTesting/obj/Debug/net7.0/ConsoleTesting.pdb
-/Users/mittens/Documents/Github/ProjectMedicineAPI/ConsoleTesting/obj/Debug/net7.0/ConsoleTesting.genruntimeconfig.cache
-/Users/mittens/Documents/Github/ProjectMedicineAPI/ConsoleTesting/obj/Debug/net7.0/ref/ConsoleTesting.dll
-/Users/mittens/Documents/Github/ProjectMedicineAPI/ConsoleTesting/bin/Debug/net7.0/Microsoft.OpenApi.dll
-/Users/mittens/Documents/Github/ProjectMedicineAPI/ConsoleTesting/bin/Debug/net7.0/Swashbuckle.AspNetCore.Swagger.dll
-/Users/mittens/Documents/Github/ProjectMedicineAPI/ConsoleTesting/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll
-/Users/mittens/Documents/Github/ProjectMedicineAPI/ConsoleTesting/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll
-/Users/mittens/Documents/Github/ProjectMedicineAPI/ConsoleTesting/bin/Debug/net7.0/DL_Medicine.dll
-/Users/mittens/Documents/Github/ProjectMedicineAPI/ConsoleTesting/bin/Debug/net7.0/DL_Medicine.pdb
+C:\Users\Mittens\Documents\GitHub\ProjectMedicineAPI\ConsoleTesting\bin\Debug\net7.0\ConsoleTesting.exe
+C:\Users\Mittens\Documents\GitHub\ProjectMedicineAPI\ConsoleTesting\bin\Debug\net7.0\ConsoleTesting.deps.json
+C:\Users\Mittens\Documents\GitHub\ProjectMedicineAPI\ConsoleTesting\bin\Debug\net7.0\ConsoleTesting.runtimeconfig.json
+C:\Users\Mittens\Documents\GitHub\ProjectMedicineAPI\ConsoleTesting\bin\Debug\net7.0\ConsoleTesting.dll
+C:\Users\Mittens\Documents\GitHub\ProjectMedicineAPI\ConsoleTesting\bin\Debug\net7.0\ConsoleTesting.pdb
+C:\Users\Mittens\Documents\GitHub\ProjectMedicineAPI\ConsoleTesting\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\Mittens\Documents\GitHub\ProjectMedicineAPI\ConsoleTesting\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Mittens\Documents\GitHub\ProjectMedicineAPI\ConsoleTesting\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Mittens\Documents\GitHub\ProjectMedicineAPI\ConsoleTesting\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Mittens\Documents\GitHub\ProjectMedicineAPI\ConsoleTesting\bin\Debug\net7.0\BL Medicine.dll
+C:\Users\Mittens\Documents\GitHub\ProjectMedicineAPI\ConsoleTesting\bin\Debug\net7.0\DL_Medicine.dll
+C:\Users\Mittens\Documents\GitHub\ProjectMedicineAPI\ConsoleTesting\bin\Debug\net7.0\BL Medicine.pdb
+C:\Users\Mittens\Documents\GitHub\ProjectMedicineAPI\ConsoleTesting\bin\Debug\net7.0\DL_Medicine.pdb
+C:\Users\Mittens\Documents\GitHub\ProjectMedicineAPI\ConsoleTesting\obj\Debug\net7.0\ConsoleTesting.csproj.AssemblyReference.cache
+C:\Users\Mittens\Documents\GitHub\ProjectMedicineAPI\ConsoleTesting\obj\Debug\net7.0\ConsoleTesting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mittens\Documents\GitHub\ProjectMedicineAPI\ConsoleTesting\obj\Debug\net7.0\ConsoleTesting.AssemblyInfoInputs.cache
+C:\Users\Mittens\Documents\GitHub\ProjectMedicineAPI\ConsoleTesting\obj\Debug\net7.0\ConsoleTesting.AssemblyInfo.cs
+C:\Users\Mittens\Documents\GitHub\ProjectMedicineAPI\ConsoleTesting\obj\Debug\net7.0\ConsoleTesting.csproj.CoreCompileInputs.cache
+C:\Users\Mittens\Documents\GitHub\ProjectMedicineAPI\ConsoleTesting\obj\Debug\net7.0\ConsoleTesting.csproj.CopyComplete
+C:\Users\Mittens\Documents\GitHub\ProjectMedicineAPI\ConsoleTesting\obj\Debug\net7.0\ConsoleTesting.dll
+C:\Users\Mittens\Documents\GitHub\ProjectMedicineAPI\ConsoleTesting\obj\Debug\net7.0\refint\ConsoleTesting.dll
+C:\Users\Mittens\Documents\GitHub\ProjectMedicineAPI\ConsoleTesting\obj\Debug\net7.0\ConsoleTesting.pdb
+C:\Users\Mittens\Documents\GitHub\ProjectMedicineAPI\ConsoleTesting\obj\Debug\net7.0\ConsoleTesting.genruntimeconfig.cache
+C:\Users\Mittens\Documents\GitHub\ProjectMedicineAPI\ConsoleTesting\obj\Debug\net7.0\ref\ConsoleTesting.dll

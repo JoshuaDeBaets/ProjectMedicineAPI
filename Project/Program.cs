@@ -2,6 +2,7 @@
 
 using BL_Medicine.Builders;
 using BL_Medicine.Domain;
+using BL_Medicine.RegexChecks;
 
 Console.WriteLine("Hello, World!");
 
@@ -9,12 +10,7 @@ User xenia = UserBuild();
 
 static User UserBuild()
 {
-    var user = new UserBuilder()
-        .SetFirstname( "Xenia" )
-        .SetSurname( "hey" )
-        .SetEmail( "hey" )
-        .SetWeight( 256 )
-        .SetHeight( 186 );
+    string stringtoencrypt = "HelloThere";
 
-    return user.Build();
+    Console.WriteLine ( Encryptor.EncryptString ( stringtoencrypt ) );
 }

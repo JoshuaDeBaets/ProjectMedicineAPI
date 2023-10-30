@@ -44,13 +44,13 @@ public class UserRestController : ControllerBase, IUserRestController
         }
     }
 
-    [HttpGet ( "Getstring" )]
+    [HttpGet ( "NickBald" )]
     public ActionResult<User> FuckJews()
     {
         try
         {
 
-            string fuckjews = "fuck the jews";
+            string fuckjews = "Petaa is gay";
 
             return Ok ( fuckjews );
         }

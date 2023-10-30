@@ -35,3 +35,11 @@
 /Users/mittens/Documents/Github/ProjectMedicineAPI/Project/obj/Debug/net7.0/Project.pdb
 /Users/mittens/Documents/Github/ProjectMedicineAPI/Project/obj/Debug/net7.0/Project.genruntimeconfig.cache
 /Users/mittens/Documents/Github/ProjectMedicineAPI/Project/obj/Debug/net7.0/ref/Project.dll
+C:\Users\Mittens\Documents\GitHub\ProjectMedicineAPI\Project\obj\Debug\net7.0\Project.csproj.AssemblyReference.cache
+C:\Users\Mittens\Documents\GitHub\ProjectMedicineAPI\Project\obj\Debug\net7.0\Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mittens\Documents\GitHub\ProjectMedicineAPI\Project\obj\Debug\net7.0\Project.AssemblyInfoInputs.cache
+C:\Users\Mittens\Documents\GitHub\ProjectMedicineAPI\Project\obj\Debug\net7.0\Project.AssemblyInfo.cs
+C:\Users\Mittens\Documents\GitHub\ProjectMedicineAPI\Project\obj\Debug\net7.0\Project.csproj.CoreCompileInputs.cache
+C:\Users\Mittens\Documents\GitHub\ProjectMedicineAPI\Project\obj\Debug\net7.0\Project.dll
+C:\Users\Mittens\Documents\GitHub\ProjectMedicineAPI\Project\obj\Debug\net7.0\refint\Project.dll
+C:\Users\Mittens\Documents\GitHub\ProjectMedicineAPI\Project\obj\Debug\net7.0\Project.pdb

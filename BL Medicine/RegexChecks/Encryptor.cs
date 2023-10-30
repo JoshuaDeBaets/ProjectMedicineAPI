@@ -1,75 +1,89 @@
-using System;
-using System.IO;
 using System.Security.Cryptography;
-using System.Text;
+using System;
 
 namespace BL_Medicine.RegexChecks;
 
-public class Encryptor
+public static class Encryptor
 {
-    private readonly byte[] key;
-    private readonly byte[] iv;
-
-    public Encryptor(byte[] key, byte[] iv)
+    public static string EncryptString( this string input )
     {
-        this.key = key ?? throw new ArgumentNullException(nameof(key));
-        this.iv = iv ?? throw new ArgumentNullException(nameof(iv));
-
-        // Ensure that the key and IV have the appropriate lengths.
-        if (key.Length != 16 && key.Length != 24 && key.Length != 32)
+        try
         {
-            throw new ArgumentException("Invalid key length. AES-128, AES-192, or AES-256 key lengths are supported.");
-        }
-
-        if (iv.Length != 16)
-        {
-            throw new ArgumentException("Invalid IV length. It should be 16 bytes for AES.");
-        }
-    }
-
-    public string Encrypt(string plainText)
-    {
-        using (Aes aesAlg = Aes.Create())
-        {
-            aesAlg.Key = key;
-            aesAlg.IV = iv;
-
-            ICryptoTransform encryptor = aesAlg.CreateEncryptor(aesAlg.Key, aesAlg.IV);
-
-            using (MemoryStream msEncrypt = new MemoryStream())
+            using (MemoryStream memoryStream = new ( ))
             {
-                using (CryptoStream csEncrypt = new CryptoStream(msEncrypt, encryptor, CryptoStreamMode.Write))
+                using (Aes aes = Aes.Create ( ))
                 {
-                    using (StreamWriter swEncrypt = new StreamWriter(csEncrypt))
+                    byte[] key =
                     {
-                        swEncrypt.Write(plainText);
+                        0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08,
+                        0x09, 0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16
+                    };
+                    aes.Key = key;
+
+                    byte[] iv = aes.IV;
+                    memoryStream.Write ( iv, 0, iv.Length );
+
+                    using (CryptoStream cryptoStream = new (
+                        memoryStream,
+                        aes.CreateEncryptor ( ),
+                        CryptoStreamMode.Write ))
+                    {
+                        using (StreamWriter encryptWriter = new ( cryptoStream ))
+                        {
+                            encryptWriter.WriteLine ( input );
+                        }
                     }
                 }
 
-                return Convert.ToBase64String(msEncrypt.ToArray());
+                // To get the encrypted string from the MemoryStream
+                string encryptedString = Convert.ToBase64String ( memoryStream.ToArray ( ) );
+                return encryptedString;
             }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine ( $"Encryption failed: {ex}" );
+            return null; // Return null in case of an error
         }
     }
 
-    public string Decrypt(string cipherText)
+
+    public static string DecryptString( this string encryptedString )
     {
-        using (Aes aesAlg = Aes.Create())
+        try
         {
-            aesAlg.Key = key;
-            aesAlg.IV = iv;
-
-            ICryptoTransform decrypt = aesAlg.CreateDecryptor(aesAlg.Key, aesAlg.IV);
-
-            using (MemoryStream msDecrypt = new MemoryStream(Convert.FromBase64String(cipherText)))
+            using (MemoryStream memoryStream = new ( Convert.FromBase64String ( encryptedString ) ))
             {
-                using (CryptoStream csDecrypt = new CryptoStream(msDecrypt, decrypt, CryptoStreamMode.Read))
+                using (Aes aes = Aes.Create ( ))
                 {
-                    using (StreamReader srDecrypt = new StreamReader(csDecrypt))
+                    byte[] key =
                     {
-                        return srDecrypt.ReadToEnd();
+                        0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08,
+                        0x09, 0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16
+                    };
+                    aes.Key = key;
+
+                    byte[] iv = new byte[16];
+                    memoryStream.Read ( iv, 0, iv.Length );
+                    aes.IV = iv;
+
+                    using (CryptoStream cryptoStream = new (
+                        memoryStream,
+                        aes.CreateDecryptor ( ),
+                        CryptoStreamMode.Read ))
+                    {
+                        using (StreamReader decryptReader = new ( cryptoStream ))
+                        {
+                            return decryptReader.ReadLine ( );
+                        }
                     }
                 }
             }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine ( $"Decryption failed: {ex}" );
+            return null; // Return null in case of an error
         }
     }
 }

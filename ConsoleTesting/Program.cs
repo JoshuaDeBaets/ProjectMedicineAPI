@@ -13,18 +13,16 @@ public abstract class Program
 {
     static void Main()
     {
+        string stringtoencrypt = "RobbeIsGeil";
 
+        string encrypted = stringtoencrypt.EncryptString ( );
 
-        string hi = "Nosferatu21";
-        byte[] Key = KeyAndIvGenerator.GenerateRandomKey(128);
+        string decrypted = encrypted.DecryptString ( );
 
-        // Generate a 128-bit (16-byte) IV for AES encryption.
-        byte[] IV = KeyAndIvGenerator.GenerateRandomIv(128);
-        Encryptor crypto = new( Key, IV );
-        string cript = crypto.Encrypt( hi );
+        
 
-        Console.Write(cript);
+        Console.WriteLine ( Encryptor.EncryptString ( stringtoencrypt ) );
 
-
+        Console.WriteLine (Encryptor.DecryptString ( encrypted ) );
     }
 }
