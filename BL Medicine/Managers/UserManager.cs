@@ -78,12 +78,12 @@ public class UserManager
         //throw new NotImplementedException();
     }
 
-    public ErrorModel UpdateProfile()
+    public ErrorModel UpdateProfile(User user)
     {
         throw new NotImplementedException();
     }
 
-    public ErrorModel DeleteProfile()
+    public ErrorModel DeleteProfile(User user)
     {
         throw new NotImplementedException();
     }

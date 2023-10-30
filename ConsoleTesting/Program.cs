@@ -17,12 +17,29 @@ public abstract class Program
 
         string encrypted = stringtoencrypt.EncryptString ( );
 
+        string encrypted2 = stringtoencrypt.EncryptString ( );
+
+        string encrypted3 = stringtoencrypt.EncryptString ( );
+
+
+
+        string test1 = encrypted;
+
+        string test2 = encrypted;
+
         string decrypted = encrypted.DecryptString ( );
 
-        
+        string decrypted2 = encrypted2.DecryptString ( );
 
-        Console.WriteLine ( Encryptor.EncryptString ( stringtoencrypt ) );
+        string decrypted3 = encrypted3.DecryptString ( );
 
-        Console.WriteLine (Encryptor.DecryptString ( encrypted ) );
+        Console.WriteLine ( encrypted );
+        Console.WriteLine(encrypted2); Console.WriteLine(encrypted3);
+
+        Console.WriteLine ( decrypted );
+        Console.WriteLine ( decrypted2 );
+        Console.WriteLine ( decrypted3 );
+
+
     }
 }
