@@ -67,11 +67,10 @@ public class UserManager
 
     public User GetProfile()
     {
-        var b = new UserBuilder()
-            .SetFirstname( "Hodor" )
-            .SetSurname( "Jansenss" )
-            .SetEmail( "jansenss@gmail.com" )
-            .Password( "Idk" );
+        var b = new UserBuilder ( )
+            .SetFirstname ( "Hodor" )
+            .SetSurname ( "Jansenss" )
+            .SetEmail ( "jansenss@gmail.com" );
             
 
         var user = b.Build();

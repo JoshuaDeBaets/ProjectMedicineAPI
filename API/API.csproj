@@ -16,4 +16,8 @@
       <ProjectReference Include="..\DL_Medicine\DL_Medicine.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Mappers\" />
+    </ItemGroup>
+
 </Project>

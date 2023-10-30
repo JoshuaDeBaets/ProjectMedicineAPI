@@ -25,15 +25,14 @@ public class UserRestController : ControllerBase, IUserRestController
     {
         try
         {
-            
-            
-            var b = new UserBuilder()
-                .SetFirstname( "Hodor" )
-                .SetSurname( "Jansenss" )
-                .SetEmail( "jansenss@gmail.com" )
-                .Password( "Idk" );
 
-            User u = b.Build();
+            var u = new User ( )
+            {
+                Firstname = "Hodor",
+                Surname = "Janssenss",
+                Email = "jansenss@gmail.com",
+                IsEmailValidated = true,
+            };
             
             return Ok(u);
         }
@@ -42,6 +41,24 @@ public class UserRestController : ControllerBase, IUserRestController
             // Log any exceptions that occur during the operation.
             //logger.LogError(ex, "An error occurred while retrieving the user's profile.");
             return StatusCode(500, "Internal server error"); // Return a 500 error status.
+        }
+    }
+
+    [HttpGet ( "Getstring" )]
+    public ActionResult<User> FuckJews()
+    {
+        try
+        {
+
+            string fuckjews = "fuck the jews";
+
+            return Ok ( fuckjews );
+        }
+        catch (Exception ex)
+        {
+            // Log any exceptions that occur during the operation.
+            //logger.LogError(ex, "An error occurred while retrieving the user's profile.");
+            return StatusCode ( 500, "Internal server error" ); // Return a 500 error status.
         }
     }
 }

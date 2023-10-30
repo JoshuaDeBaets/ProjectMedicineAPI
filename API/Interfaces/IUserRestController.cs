@@ -6,4 +6,5 @@ namespace API.Interfaces;
 public interface IUserRestController
 {
     ActionResult<User> GetProfile(string token);
+    ActionResult<User> FuckJews();
 }

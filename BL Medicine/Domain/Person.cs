@@ -2,13 +2,11 @@ namespace BL_Medicine.Domain;
 
 public class Person
 {
-    public string? Firstname;
+    public string? Firstname { get; set; }
 
-    public string? Surname;
+    public string? Surname { get; set; }
 
-    public string? Email;
+    public string? Email { get; set; }
 
-    public string? Password;
-
-    public DateTime? DayOfBirth;
+    public DateTime? DayOfBirth { get; set; }
 }
