@@ -87,6 +87,4 @@ public class UserManager
     {
         throw new NotImplementedException();
     }
-    
-    
 }

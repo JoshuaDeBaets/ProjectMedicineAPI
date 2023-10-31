@@ -3,17 +3,17 @@ namespace BL_Medicine.Domain;
 public class Medicine
 {
 
-    public int? Id;
+    public int? Id { get; set; }
     
-    public string? Name;
+    public string? Name { get; set; }
 
-    public string? Description;
+    public string? Description { get; set; }
 
-    public string? Barcode;
+    public string? Barcode { get; set; }
 
-    public List<string> UsedFor;
+    public List<string> UsedFor { get; set; }
 
-    public List<string> SideEffects;
+    public List<string> SideEffects { get; set; }
 
     public Medicine()
     {

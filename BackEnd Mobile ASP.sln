@@ -1,14 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BL Medicine", "BL Medicine\BL Medicine.csproj", "{FA87683C-262D-47C8-ABAA-87EB065A7188}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BL Medicine", "BL Medicine\BL Medicine.csproj", "{FA87683C-262D-47C8-ABAA-87EB065A7188}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project", "Project\Project.csproj", "{ECD4E3EB-1367-46F9-A06F-F3932D7A49A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "API\API.csproj", "{DCF0FD10-D5EB-4EDE-882D-87528C5BE6B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{DCF0FD10-D5EB-4EDE-882D-87528C5BE6B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleTesting", "ConsoleTesting\ConsoleTesting.csproj", "{CC5FFBCB-6964-418F-A659-2D542EAEE3D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTesting", "ConsoleTesting\ConsoleTesting.csproj", "{CC5FFBCB-6964-418F-A659-2D542EAEE3D6}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DL_Medicine", "DL_Medicine\DL_Medicine.csproj", "{5B1C549C-8534-4E2F-BF3C-7FFDBC4AD4DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DL_Medicine", "DL_Medicine\DL_Medicine.csproj", "{5B1C549C-8534-4E2F-BF3C-7FFDBC4AD4DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,10 +21,6 @@ Global
 		{FA87683C-262D-47C8-ABAA-87EB065A7188}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA87683C-262D-47C8-ABAA-87EB065A7188}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA87683C-262D-47C8-ABAA-87EB065A7188}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ECD4E3EB-1367-46F9-A06F-F3932D7A49A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ECD4E3EB-1367-46F9-A06F-F3932D7A49A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ECD4E3EB-1367-46F9-A06F-F3932D7A49A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ECD4E3EB-1367-46F9-A06F-F3932D7A49A5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DCF0FD10-D5EB-4EDE-882D-87528C5BE6B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DCF0FD10-D5EB-4EDE-882D-87528C5BE6B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCF0FD10-D5EB-4EDE-882D-87528C5BE6B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -36,5 +33,8 @@ Global
 		{5B1C549C-8534-4E2F-BF3C-7FFDBC4AD4DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B1C549C-8534-4E2F-BF3C-7FFDBC4AD4DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B1C549C-8534-4E2F-BF3C-7FFDBC4AD4DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
