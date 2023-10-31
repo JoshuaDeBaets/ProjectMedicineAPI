@@ -31,4 +31,14 @@ public class UserRepository : IUserRepository
     {
         throw new NotImplementedException();
     }
+
+    public LoginResponse Login( string email, string password )
+    {
+        throw new NotImplementedException ( );
+    }
+
+    public LoginResponse Register( string firstname, string lastname, string email, string password, string confirmPassword )
+    {
+        throw new NotImplementedException ( );
+    }
 }

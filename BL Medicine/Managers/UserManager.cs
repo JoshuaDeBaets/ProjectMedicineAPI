@@ -23,17 +23,17 @@ public class UserManager
         {
             if ( email.isNull() || password.isNull() )
             {
-                var response = new LoginResponse()
+                var response = new LoginResponse ( )
                 {
                     HasError = true,
-                    ErrorMessage = "One or more of the fields are null"
+                    ErrorMessage = "One or more of the fields are null",
+                    Token = "",
                 };
                 return response;
             }
-            
-            //TODO: Login
-            return null;
-        }
+
+            return _userRepository.Login ( email, password );
+    }
         catch ( Exception e )
         {
             throw new UserException( "Error logging in" );
@@ -52,6 +52,16 @@ public class UserManager
                 {
                     HasError = true,
                     ErrorMessage = "One or more of the fields are null"
+                };
+                return response;
+            }
+
+            if (password != confirmPassword)
+            {
+                var response = new LoginResponse ( )
+                {
+                    HasError = true,
+                    ErrorMessage = "Password and confirmPassword do not match"
                 };
                 return response;
             }
@@ -80,11 +90,25 @@ public class UserManager
 
     public ErrorModel UpdateProfile(User user)
     {
-        throw new NotImplementedException();
+        try
+        {
+            throw new NotImplementedException ( );
+        }
+        catch ( Exception e)
+        {
+            throw new UserException ( "Error Updating Profile", e );
+        }
     }
 
     public ErrorModel DeleteProfile(User user)
     {
-        throw new NotImplementedException();
+        try
+        {
+            throw new NotImplementedException ( );
+        }
+        catch (Exception e)
+        {
+            throw new Exception ( "Error Deleting Profile", e );
+        }
     }
 }
