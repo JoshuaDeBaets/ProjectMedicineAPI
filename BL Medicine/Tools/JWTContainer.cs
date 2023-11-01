@@ -12,7 +12,6 @@ namespace BL_Medicine.Domain
     {
         public int ExpireMinutes { get; set; } = 10800; // 7 days
         public string SecurityAlgorithm { get; set; } = SecurityAlgorithms.HmacSha256Signature;
-
-        public Claim[] Claims { get; set; }
+        public Claim[]? Claims { get; set; }
     }
 }
