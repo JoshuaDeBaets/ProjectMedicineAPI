@@ -1,4 +1,4 @@
-namespace BL_Medicine.RegexChecks;
+namespace BL_Medicine.Tools;
 
 public static class Extensions
 {

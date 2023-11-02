@@ -1,6 +1,6 @@
 using BL_Medicine.Domain;
 using BL_Medicine.Exceptions;
-using BL_Medicine.RegexChecks;
+using BL_Medicine.Tools;
 
 namespace BL_Medicine.Builders;
 

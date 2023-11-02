@@ -6,5 +6,6 @@ namespace API.Interfaces;
 public interface IUserRestController
 {
     ActionResult<User> GetProfile(string token);
-    ActionResult<User> FuckJews();
+    ActionResult<LoginResponse> Login(string email, string password);
+    ActionResult<LoginResponse> Register(string firstname, string lastname, string email, string password, string confirmPassword);
 }

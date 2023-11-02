@@ -3,7 +3,7 @@ using System.Runtime.InteropServices.JavaScript;
 using BL_Medicine.Builders;
 using BL_Medicine.Domain;
 using BL_Medicine.Exceptions;
-using BL_Medicine.RegexChecks;
+using BL_Medicine.Tools;
 using BL_Medicine.Repositories;
 
 namespace BL_Medicine.Managers;
@@ -33,10 +33,10 @@ public class UserManager
             }
 
             return _userRepository.Login ( email, password );
-    }
+        }
         catch ( Exception e )
         {
-            throw new UserException( "Error logging in" );
+            throw;
         }
         
     }
@@ -66,8 +66,8 @@ public class UserManager
                 return response;
             }
 
-            //TODO: Working Register
-            return null;
+            return _userRepository.Register ( firstname, lastname, email, password, confirmPassword );
+            
         }
         catch ( Exception e )
         {
@@ -75,17 +75,21 @@ public class UserManager
         }
     }
 
-    public User GetProfile()
+    public User GetProfile(string email)
     {
-        var b = new UserBuilder ( )
-            .SetFirstname ( "Hodor" )
-            .SetSurname ( "Jansenss" )
-            .SetEmail ( "jansenss@gmail.com" );
-            
+        try
+        {
+            if (email.isNull ( ))
+            {
+                throw new UserException ( "Email is null" );
+            }
 
-        var user = b.Build();
-        return user;
-        //throw new NotImplementedException();
+            return _userRepository.GetProfile ( email );
+        } catch (Exception e)
+        {
+            throw;
+        }
+
     }
 
     public ErrorModel UpdateProfile(User user)

@@ -37,7 +37,7 @@ namespace API
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Medicine API", Version = "v1", Description = "The MediApp API" });
             });
 
-            string connectionString = "Test";
+            string connectionString = @"Data Source=(local)\SQLEXPRESS;Initial Catalog=MobileDB;Integrated Security=True";
             services.AddControllers();
             services.AddSingleton<IUserRepository>(r => new UserRepository(connectionString));
             services.AddSingleton<UserManager>();

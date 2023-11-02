@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IdentityModel.Tokens.Jwt;
 using BL_Medicine.Exceptions;
+using BL_Medicine.Tools;
 
 namespace BL_Medicine.Managers
 {

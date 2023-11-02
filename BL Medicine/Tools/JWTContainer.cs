@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.IdentityModel.Tokens;
 
-namespace BL_Medicine.Domain
+namespace BL_Medicine.Tools
 {
     public class JWTContainer
     {
