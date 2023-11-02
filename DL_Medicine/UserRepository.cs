@@ -100,9 +100,13 @@ public class UserRepository : IUserRepository
                         response.HasError = false;
                         response.ErrorMessage = "Succesfully registered";
                         response.Token = jwtSecret;
+                        return response;
                     }
                 }
-                return new LoginResponse ( );
+                response.HasError = true;
+                response.ErrorMessage = "Error registering";
+                response.Token = "";
+                return response;
             }
         }
         catch (Exception)
@@ -126,12 +130,44 @@ public class UserRepository : IUserRepository
         throw new NotImplementedException();
     }
 
+    public bool userExists(string email)
+    {
+        SqlConnection connection = new SqlConnection ( _connectionString );
+        try
+        {
+            
+            string query = "select count(*) from [User] where Email = @Email";
+
+            using (SqlCommand cmd = connection.CreateCommand ( ))
+            {
+                connection.Open ( );
+                cmd.CommandText = query;
+                cmd.Parameters.AddWithValue ( "@Email", email );
+
+
+                int userCount = (int)cmd.ExecuteScalar ( );
+
+                return userCount > 0;
+            }
+        }
+        catch( Exception)
+        {
+            throw;
+        }
+        finally
+        {
+            connection.Close ( );
+        }
+
+    }
+
     public User GetProfile(string email)
     {
+        SqlConnection connection = new SqlConnection ( _connectionString );
         try
         {
             var user = new User ( );
-            SqlConnection connection = new SqlConnection ( _connectionString );
+            
             string query = "SELECT Firstname, Surname, Email FROM [User] WHERE Email = @email";
 
             using (SqlCommand cmd = connection.CreateCommand ( ))
@@ -163,6 +199,10 @@ public class UserRepository : IUserRepository
         {
             // Handle exceptions
             throw new UserRepositoryException ( "Error in UserRepositorySQL - Login - exception: " + ex.Message, ex );
+        }
+        finally
+        {
+            connection.Close ( );
         }
     }
 

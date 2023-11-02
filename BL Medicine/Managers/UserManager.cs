@@ -41,37 +41,34 @@ public class UserManager
         
     }
 
-    public LoginResponse Register(string firstname, string lastname, string email, string password, string confirmPassword)
+    public LoginResponse Register( string firstname, string surname, string email, string password, string confirmPassword )
     {
         try
         {
-            if ( firstname.isNull() || lastname.isNull() || email.isNull() || password.isNull() ||
-                 confirmPassword.isNull() )
-            {
-                var response = new LoginResponse()
-                {
-                    HasError = true,
-                    ErrorMessage = "One or more of the fields are null"
-                };
-                return response;
-            }
+
+            if (string.IsNullOrEmpty ( firstname ) || string.IsNullOrEmpty ( surname ) || string.IsNullOrEmpty ( email ) || string.IsNullOrEmpty ( password ) || string.IsNullOrEmpty ( confirmPassword ))
+                return new LoginResponse { HasError = true, ErrorMessage = "One or more of the fields are null" };
+
+            if (!firstname.IsValidName ( ) )
+                return new LoginResponse { HasError = true, ErrorMessage = "Invalid firstname" };
+
+            if (!surname.IsValidName ( ) )
+                return new LoginResponse { HasError = true, ErrorMessage = "Invalid surname" };
+
+            if (!email.IsValidEmail ( ) )
+                return new LoginResponse { HasError = true, ErrorMessage = "Invalid emailadress" };
 
             if (password != confirmPassword)
-            {
-                var response = new LoginResponse ( )
-                {
-                    HasError = true,
-                    ErrorMessage = "Password and confirmPassword do not match"
-                };
-                return response;
-            }
+                return new LoginResponse { HasError = true, ErrorMessage = "Password and confirmPassword do not match" };
 
-            return _userRepository.Register ( firstname, lastname, email, password, confirmPassword );
-            
+            if (_userRepository.userExists ( email ))
+                return new LoginResponse { HasError = true, ErrorMessage = "A User with this email already exists" };
+
+            return _userRepository.Register ( firstname, surname, email, password, confirmPassword );
         }
-        catch ( Exception e )
+        catch (Exception e)
         {
-            throw new UserException( "Error Registering", e );
+            throw new UserException ( "Error Registering", e );
         }
     }
 

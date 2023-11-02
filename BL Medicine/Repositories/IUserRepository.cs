@@ -10,4 +10,5 @@ public interface IUserRepository
     LoginResponse Register( string firstname, string lastname, string email, string password, string confirmPassword );
 
     User GetProfile( string email );
+    bool userExists( string email );
 }
