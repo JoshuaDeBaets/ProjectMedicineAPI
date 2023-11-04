@@ -54,6 +54,9 @@ namespace API
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseAuthentication ( );
+            app.UseAuthorization ( );
+
             app.UseSwagger(c =>
             {
                 c.PreSerializeFilters.Add((swaggerDoc, httpReq) =>

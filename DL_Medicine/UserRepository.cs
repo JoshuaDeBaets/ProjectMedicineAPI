@@ -6,6 +6,7 @@ using DL_Medicine.Exceptions;
 using Microsoft.Extensions.Configuration;
 using System.Data.SqlClient;
 using BL_Medicine.Managers;
+using System.Security.Claims;
 
 namespace DL_Medicine;
 
@@ -17,7 +18,7 @@ public class UserRepository : IUserRepository
     {
         
         _connectionString = connectionstring;
-        jwtSecret = "eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJJc3N1ZXIiLCJVc2VybmFtZSI6IkphdmFJblVzZSIsImV4cCI6MTY5ODg0NzkzNCwiaWF0IjoxNjk4ODQ3OTM0fQ.Kmfv3crnSj7B2du3o9qji1Jg2Ukb5jCidz6LcSbIsys";
+        jwtSecret = @"c1+D+ixsmMqtoQADJyXMFMjsOCp1yErBB6WNLvN7sGfMOS2m20s6HSE0UP7KjkePMEM6/p/oP/c6Zod7TjT5ww==";
     }
 
     public LoginResponse Login( string email, string password )
@@ -25,9 +26,8 @@ public class UserRepository : IUserRepository
         SqlConnection connection = new SqlConnection ( _connectionString );
         try
         {
-            var response = new LoginResponse ( );
             
-            string query = "SELECT Email, Password FROM [User] WHERE Email = @Email";
+            string query = "SELECT UserID, Email, Password FROM [User] WHERE Email = @Email";
 
             using (SqlCommand cmd = connection.CreateCommand ( ))
             {
@@ -40,26 +40,22 @@ public class UserRepository : IUserRepository
                 while (reader.Read( ))
                 {
                     string pw = (string)reader["password"];
-                    Console.WriteLine ( pw );
-                    Console.WriteLine ( pw.DecryptString ( ) );
+                    int id = (int)reader["userid"];
+                    string email2 = (string)reader["email"];
+                   
 
                     if (string.Equals ( password, pw.DecryptString ( ) ))
                     {
-                        response.HasError = false;
-                        response.ErrorMessage = "Succesfully logged in";
-                        response.Token = jwtSecret;
-                        return response;
+                        
+                        JWTContainer container = JWTManager.GetJWTContainer ( id.ToString(), email2 );
+                        JWTManager jWTManager = new JWTManager ( jwtSecret );
+                        string token = jWTManager.GenerateToken ( container );
+                        return new LoginResponse { HasError = false, ErrorMessage = "Succesfully logged in", Token = token };
                         };
-                    response.HasError = true;
-                    response.ErrorMessage = "Password is incorrect";
-                    response.Token = "";
-                    return response;
+                    return new LoginResponse { HasError = true, ErrorMessage = "Password is incorrect" };
                 }
             }
-            response.HasError = true;
-            response.ErrorMessage = "User does not exist";
-            response.Token = "";
-            return response;
+            return new LoginResponse { HasError = true, ErrorMessage = "User does not exist" };
         }
         catch (Exception ex)
         {
@@ -117,17 +113,6 @@ public class UserRepository : IUserRepository
         {
             connection.Close ( );
         }
-    }
-
-
-    public void UpdateUser()
-    {
-        throw new NotImplementedException();
-    }
-
-    public void Update()
-    {
-        throw new NotImplementedException();
     }
 
     public bool userExists(string email)
@@ -206,5 +191,98 @@ public class UserRepository : IUserRepository
         }
     }
 
+    public void UpdateUser()
+    {
+        throw new NotImplementedException ( );
+    }
+
+    public void Update()
+    {
+        throw new NotImplementedException ( );
+    }
+
+    public ErrorModel DeleteUser(string id)
+    {
+        SqlConnection conncetion = new SqlConnection ( _connectionString );
+        try
+        {
+            string query = "DELETE FROM [User] WHERE UserID = @UserId";
+
+            using (SqlCommand cmd = conncetion.CreateCommand ( ))
+            {
+                conncetion.Open ( );
+                cmd.CommandText = query;
+                cmd.Parameters.AddWithValue ( "@UserId", id );
+
+                int rowsAffected = cmd.ExecuteNonQuery ( );
+
+                if (rowsAffected > 0)
+                {
+                    return new ErrorModel { HasError = false, ErrorMessage = "Succesfully deleted" };
+                }
+                return new ErrorModel { HasError = true, ErrorMessage = "Error deleting" };
+            }   
+        }
+        catch (Exception)
+        {
+
+            throw;
+        }
+        finally
+        {
+            conncetion.Close ( );
+        }
+    }
+
+    public ErrorModel UpdateUser( string id, string? firstname, string? surname, int? weight, int? height )
+    {
+        SqlConnection connection = new SqlConnection ( _connectionString );
+
+        try
+        {
+            string query = "UPDATE [User] SET ";
+
+            List<string> updateColumns = new List<string> ( );
+
+            if (firstname != null) updateColumns.Add ( "Firstname = @Firstname" );
+            if (surname != null) updateColumns.Add ( "Surname = @Surname" );
+            if (weight != null) updateColumns.Add ( "Weight = @Weight" );
+            if (height != null) updateColumns.Add ( "Height = @Height" );
+
+            query += string.Join ( ", ", updateColumns );
+
+            query += " WHERE UserID = @UserId";
+
+
+            using (SqlCommand command = new SqlCommand ( query, connection ))
+            {
+                command.Parameters.AddWithValue ( "@Firstname", firstname );
+                command.Parameters.AddWithValue ( "@Surname", surname );
+                command.Parameters.AddWithValue ( "@Weight", weight );
+                command.Parameters.AddWithValue ( "@Height", height );
+                command.Parameters.AddWithValue ( "@UserId", id );
+
+                connection.Open ( );
+                int rowsAffected = command.ExecuteNonQuery ( );
+
+                if (rowsAffected > 0)
+                {
+                    return new ErrorModel { HasError = false, ErrorMessage = "Update successful" };
+                }
+                else
+                {
+                    return new ErrorModel { HasError = true, ErrorMessage = "User not found or no update necessary" };
+                }
+            }
+        }
+        catch (Exception)
+        {
+            throw;
+        }
+        finally
+        {
+            connection.Close ( );
+        }
+    }
 
 }

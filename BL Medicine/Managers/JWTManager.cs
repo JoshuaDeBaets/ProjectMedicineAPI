@@ -92,7 +92,7 @@ namespace BL_Medicine.Managers
             }
         }
 
-        public static JWTContainer GetJWTContainer( string id, string email, string role )
+        public static JWTContainer GetJWTContainer( string id, string email )
         {
             return new JWTContainer ( )
             {
@@ -100,7 +100,6 @@ namespace BL_Medicine.Managers
                 {
                     new Claim(ClaimTypes.NameIdentifier, id),
                     new Claim(ClaimTypes.Email, email),
-                    new Claim(ClaimTypes.Role, role),
                 }
             };
         }

@@ -5,16 +5,19 @@ using BL_Medicine.Domain;
 using BL_Medicine.Exceptions;
 using BL_Medicine.Tools;
 using BL_Medicine.Repositories;
+using System.Security.Claims;
 
 namespace BL_Medicine.Managers;
 
 public class UserManager
 {
     private IUserRepository _userRepository;
+    private string jwtSecret;
 
-    public UserManager(IUserRepository userRepository)
+    public UserManager(IUserRepository userRepository )
     {
         _userRepository = userRepository;
+        jwtSecret = @"c1+D+ixsmMqtoQADJyXMFMjsOCp1yErBB6WNLvN7sGfMOS2m20s6HSE0UP7KjkePMEM6/p/oP/c6Zod7TjT5ww==";
     }
 
     public LoginResponse Login(string email, string password)
@@ -89,11 +92,38 @@ public class UserManager
 
     }
 
-    public ErrorModel UpdateProfile(User user)
+    public User GetProfileWithToken( string token )
+    {
+        var user = new User ( );
+        string email = "";
+
+        var jwtManager = new JWTManager ( jwtSecret );
+
+        if (!jwtManager.IsTokenValid ( token ))
+        {
+            throw new UserException ( "Token is not valid" );
+        }
+        else
+        {
+            List<Claim> claims = jwtManager.GetTokenClaims ( token ).ToList ( );
+            email = claims.FirstOrDefault ( c => c.Type.Equals ( ClaimTypes.Email ) ).Value;
+            return _userRepository.GetProfile ( email );
+        }
+    }
+
+    public ErrorModel UpdateUser( string token, string firstname, string surname, int weight, int height )
     {
         try
         {
-            throw new NotImplementedException ( );
+            var jwtManager = new JWTManager ( jwtSecret );
+            if (!jwtManager.IsTokenValid ( token ))
+            {
+                return new ErrorModel { HasError = true, ErrorMessage = "Token is not valid" };
+            }
+
+            List<Claim> claims = jwtManager.GetTokenClaims ( token ).ToList ( );
+            string id = claims.FirstOrDefault ( c => c.Type.Equals ( ClaimTypes.NameIdentifier ) ).Value;
+            return _userRepository.UpdateUser ( id, firstname, surname, weight, height );
         }
         catch ( Exception e)
         {
@@ -101,11 +131,22 @@ public class UserManager
         }
     }
 
-    public ErrorModel DeleteProfile(User user)
+    public ErrorModel DeleteUser(string token)
     {
+        
         try
         {
-            throw new NotImplementedException ( );
+            string id = null;
+            var jwtManager = new JWTManager ( jwtSecret );
+            if (!jwtManager.IsTokenValid ( token ))
+            {
+                return new ErrorModel { HasError = true, ErrorMessage = "Token is not valid" };
+            }
+
+            List<Claim> claims = jwtManager.GetTokenClaims ( token ).ToList ( );
+            id = claims.FirstOrDefault ( c => c.Type.Equals ( ClaimTypes.NameIdentifier ) ).Value;
+            return _userRepository.DeleteUser(id);
+            
         }
         catch (Exception e)
         {

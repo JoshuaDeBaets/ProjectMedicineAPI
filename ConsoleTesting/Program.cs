@@ -41,5 +41,8 @@ public abstract class Program
         Console.WriteLine ( decrypted3 );
 
 
+        Console.WriteLine ( Extensions.GenerateRandomSecretKey( 64 ) );
+            ;
+
     }
 }
