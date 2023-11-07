@@ -14,4 +14,12 @@ namespace BL_Medicine.Tools
         public string SecurityAlgorithm { get; set; } = SecurityAlgorithms.HmacSha256Signature;
         public Claim[]? Claims { get; set; }
     }
+
+
+    public class JWTPasswordContainer
+    {
+        public int ExpireMinutes { get; set; } = 30; // 7 days
+        public string SecurityAlgorithm { get; set; } = SecurityAlgorithms.HmacSha256Signature;
+        public Claim[]? Claims { get; set; }
+    }
 }

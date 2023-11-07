@@ -3,6 +3,7 @@ using API.Interfaces;
 using BL_Medicine.Builders;
 using BL_Medicine.Domain;
 using BL_Medicine.Managers;
+using BL_Medicine.Tools;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -98,6 +99,7 @@ public class UserRestController : ControllerBase, IUserRestController
         //TODO: Implement Gender
         try
         {
+
             var errorModel = _userManager.UpdateUser ( token, firstname, surname, weight, height );
             if (errorModel.HasError == true)
             {
@@ -111,13 +113,14 @@ public class UserRestController : ControllerBase, IUserRestController
         }
     }
 
-    [HttpPut( "UpdatePassword" )]
-    public ActionResult<ErrorModel> UpdatePassword(string token, string newPassword, string confirmPassword)
+
+    [HttpPut( "RequestChangePasswordEmail" )]
+    public async Task <ActionResult<ErrorModel>> ChangePassword(string token)
     {
         try
         {
-            var errorModel = new ErrorModel { ErrorMessage = "Not Implemented yet KEKW", HasError = true };
-            if (errorModel.HasError == true)
+            var errorModel = await _userManager.SendEmailChangePassword ( token );
+            if (errorModel.HasError)
             {
                 return BadRequest ( errorModel );
             }
@@ -129,13 +132,14 @@ public class UserRestController : ControllerBase, IUserRestController
         }
     }
 
+
     [HttpPut ( "UpdateEmail" )]
     public ActionResult<ErrorModel> UpdateEmail( string token, string newEmail )
     {
         try
         {
             var errorModel = new ErrorModel { ErrorMessage = "Not Implemented yet KEKW", HasError = true };
-            if (errorModel.HasError == true)
+            if (errorModel.HasError)
             {
                 return BadRequest ( errorModel );
             }

@@ -89,7 +89,6 @@ public class UserManager
         {
             throw;
         }
-
     }
 
     public User GetProfileWithToken( string token )
@@ -110,6 +109,8 @@ public class UserManager
             return _userRepository.GetProfile ( email );
         }
     }
+
+    
 
     public ErrorModel UpdateUser( string token, string firstname, string surname, int weight, int height )
     {
@@ -151,6 +152,28 @@ public class UserManager
         catch (Exception e)
         {
             throw new Exception ( "Error Deleting Profile", e );
+        }
+    }
+
+    public async Task <ErrorModel> SendEmailChangePassword(string token)
+    {
+        try
+        {
+            var jwtManager  = new JWTManager ( jwtSecret );
+            if (!jwtManager.IsTokenValid ( token ))
+            {
+                return new ErrorModel { HasError = true, ErrorMessage = "Token is not valid" };
+            }
+
+            List<Claim> claims = jwtManager.GetTokenClaims(token).ToList();
+            string email = claims.FirstOrDefault ( c => c.Type.Equals ( ClaimTypes.Email ) ).Value;
+            var service = new EmailService ( "smtp-mail.outlook.com", 587, "MediAppi@outlook.com", "Hodor!258" );
+            await service.SendPasswordResetEmail ( email, token );
+            return new ErrorModel { ErrorMessage = "Email sent", HasError = false };
+        }
+        catch (Exception e)
+        {
+            return new ErrorModel { ErrorMessage = e.Message, HasError = true };
         }
     }
 }
